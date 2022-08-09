@@ -6,7 +6,7 @@ When we first encountered this idea of providing confidence limits around estima
 
 You should not be suprised to learn that the histogram does indeed converge.  You should not be surprised by this fact as I told you in the very first sentence of these instructions that when we calculate a histogram we are __estimating the probablity mass function__ for the random variable.  Consequently, similarly to how we check whether the true expectation lies within our confidence limit we can also check whether the true probablity mass function lies within the confidence limit for our histogram.
 
-Your task in this exercise is thus to plot two bar charts.  One of these bar charts should show the exact probablity mass function for a discrete uniform random variable that can take any value that is greater than or equal to 1 and less than or equal to 6.  The second should show the probablity mass function for a binomial random variable with n=6 and p=0.5.  Notice that you can calculate the exact probability mass function for a binomial random variable by using scipy as follows:
+__Your task in this exercise is thus to plot two bar charts.__  One of these bar charts should show the exact probablity mass function for a discrete uniform random variable that can take any integer value that is greater than or equal to 1 and less than or equal to 6.  The second should show the probablity mass function for a binomial random variable with n=6 and p=0.5.  Notice that you can calculate the exact probability mass function for a binomial random variable by using scipy as follows:
 
 ```python
 import scipy.stats
@@ -15,7 +15,11 @@ import scipy.stats
 p = scipy.stats.binom.pmf( x, n, p )
 ```
 
-See [this](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.binom.html) website for more details.  Similar functions exist for the other types of random vairables where the probablity mass function is non-trivial:
+See [this](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.binom.html) website for more details.   
+
+Notice that I have written stub code in the panel on the left to plot the two probablity mass functions side by side.  In your final figure the probablity mass function for the uniform discrete random variable will appear in blue while the probablity mass function for the binomial random variable plot will appear in red.  Examine the code for generating side by side bar charts carefully as you will need to produce side by side plots like these for the exercises in future weeks.
+
+Functions exist for plotting the probablity mass/density functions for other types of random vairables.  You can find information here:
 
 * [Geometric]()
 * [Negative binomial](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html)
