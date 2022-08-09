@@ -6,9 +6,12 @@ import numpy as np
 xvals = np.linspace(0,6,7) 
 
 # Your code for setting the values in uniform_pmf and binom_pmf goes here
+uniform_pmf = np.ones(7)*(1/6)
+uniform_pmf[0] = 0
 
-
-
+binom_pmf = np.zeros(7)
+for i in range(7) : 
+  binom_pmf[i] = scipy.stats.binom.pmf(i,6,0.5)
 
 # This is the part for plotting the probablity mass functions
 # side by side.  Notice that the x-coordinates
