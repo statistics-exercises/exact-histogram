@@ -21,7 +21,7 @@ Notice that I have written stub code in the panel on the left to plot the two pr
 
 Functions exist for plotting the probablity mass/density functions for other types of random vairables.  You can find information here:
 
-* [Geometric]()
+* [Geometric](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.geom.html)
 * [Negative binomial](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html)
 * [Exponential](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.expon.html)
 * [Normal](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html)
